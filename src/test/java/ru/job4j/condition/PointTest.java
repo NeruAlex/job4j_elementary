@@ -24,7 +24,7 @@ public class PointTest {
         int y1 = 2;
         int x2 = 1;
         int y2 = 0;
-        double expected = 2.23;
+        float expected = 2.23f;
         double out = Point.distance(x1, y1, x2, y2);
         Assert.assertEquals(out, expected, 0.01);
     }
@@ -46,7 +46,7 @@ public class PointTest {
         int y1 = 0;
         int x2 = 0;
         int y2 = 3;
-        double expected = 3.60;
+        float expected = 3.60f;
         double out = Point.distance(x1, y1, x2, y2);
         Assert.assertEquals(out, expected, 0.01);
     }
