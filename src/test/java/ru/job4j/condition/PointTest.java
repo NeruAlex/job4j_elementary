@@ -9,44 +9,44 @@ public class PointTest {
 
     @Test
     public void when00to20then2() {
+        int expected = 2;
         int x1 = 0;
         int y1 = 0;
         int x2 = 2;
         int y2 = 0;
-        int expected = 2;
         double out = Point.distance(x1, y1, x2, y2);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
-    public void when02to10then223() {
+    public void when02to10then2dot2dot23() {
+        float expected = 2.23f;
         int x1 = 0;
         int y1 = 2;
         int x2 = 1;
         int y2 = 0;
-        float expected = 2.23f;
         double out = Point.distance(x1, y1, x2, y2);
         Assert.assertEquals(out, expected, 0.01);
     }
 
     @Test
     public void when20to30then1() {
+        int expected = 1;
         int x1 = 2;
         int y1 = 0;
         int x2 = 3;
         int y2 = 0;
-        int expected = 1;
         double out = Point.distance(x1, y1, x2, y2);
         Assert.assertEquals(out, expected, 0.01);
     }
 
     @Test
-    public void when20to03then360() {
+    public void when20to03then3dot60() {
         int x1 = 2;
+        float expected = 3.60f;
         int y1 = 0;
         int x2 = 0;
         int y2 = 3;
-        float expected = 3.60f;
         double out = Point.distance(x1, y1, x2, y2);
         Assert.assertEquals(out, expected, 0.01);
     }
