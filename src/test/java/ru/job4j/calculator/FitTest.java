@@ -9,16 +9,16 @@ public class FitTest {
 
     @Test
     public void whenMan187ThenWeight100dot05() {
-        short in = 187;
         float expected = 100.05f;
+        short in = 187;
         double out = Fit.manWeight(in);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
     public void womanWoman167ThenWeight65dot55() {
-        short in = 167;
         float expected = 65.55f;
+        short in = 167;
         double out = Fit.womanWeight(in);
         Assert.assertEquals(expected, out, 0.01);
     }
